@@ -1,0 +1,12 @@
+
+
+  IAM  (Identity and Access Management)
+-------------------------------------------------------------------------------------------------
+🔐 Secure your AWS account
+👤 Create users instead of using root account
+🧾 Give only required permissions (least privilege)
+🏢 Manage access for teams, apps, and services
+
+
+MFA (MultiFactor Autheticator)
+-------------------------------------------------------------------------------------------------

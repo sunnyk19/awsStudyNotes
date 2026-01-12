@@ -1,0 +1,85 @@
+
+
+                         ======================  AWS =====================
+
+ EC2 Instance (part1)(Elastic Compute Cloud)
+=> In one resion we create 20 Instances 
+=> If required more than 20 , request to amezon to excced limit of create instance 
+  type of instances in EC2(total 7 types) 
+  ✔️General purpose, 
+  ✔️compute Optimized 
+  ✔️Memory  Instance ,
+  ✔️storage Instance,
+  ✔️accelerate Instanced , 
+  ✔️High Memory, 
+  ✔️previous generation 
+------------------------------------------------------------------
+1. GENERAL PURPOUSE INSTANCE :
+       Provide balence of Memory,Compute and Networking resources can be used in Verity of workloads
+       3 type of series 
+        a. A-series  b. M-series  c. T-series
+
+       b. M-series ::: is used for large instances  used custom intel xgen E5 Haswell processor optimised Specifically for CE2       Instance
+           ➡️ VCPU ->2-40(max);
+           ➡️ RAM 8-160 GB RAM 
+           ➡️ instance Storgae EBS only
+          remaing all M series is ideal cloud  
+           ➡️ VCPU ->2-96(max);
+           ➡️ RAM 8-382 GB RAM 
+           ➡️ instance Storgae EBS and NVMs SSD
+       c. T-series ::: T series used for Devlopment pupose testing, at starting phase testing , testing purpose only
+           ➡️ VCPU ->2-8(max);
+           ➡️ RAM 05-32 GB RAM 
+              used for code devlopment , website devlopment,web app ,code reposotories
+
+2. COMPUTE OPTIMISED :::  
+       A Compute Optimized Instance is a type of cloud server (VM) designed for high CPU performance relative to   memory and storage. It’s best when your application is CPU-intensive rather than memory- or disk-heavy. 
+           ➡️ More CPU power, less RAM & storage
+           ➡️ Best for fast processing, calculations, and heavy computation 
+
+           C-series instances
+            C5, C6i, C7g
+            Example: c6i.large
+
+             -- Common Use Cases --
+          ✔ High-performance backend APIs
+          ✔ Microservices with heavy computation
+          ✔ Gaming servers
+          ✔ Batch processing
+          ✔ Video encoding / transcoding
+          ✔ Machine learning inference
+          ✔ Scientific & financial modeling
+
+3. MEMORY OPTIMISED INSTANCE ::: 
+      A Memory Optimized Instance is a cloud VM designed for workloads that need very high RAM compared to CPU. It’s ideal when your application keeps large data sets in memory for fast access.  
+          ➡️ More RAM, comparatively fewer CPUs
+          ➡️ Best for in-memory processing   
+
+          R-series → R5, R6i, R7g
+          X-series → X2idn, X2iedn (very large RAM)    
+
+4. STORAGE OPTIMISED INSTANCE :::
+     A Storage Optimized Instance is a cloud VM designed for workloads that need very fast disk I/O, high throughput, and/or large local storage. 
+          ➡️ High disk performance (IOPS + throughput)
+          ➡️ Optimized for read/write–heavy workloads         
+            -- Key Points --
+          ✔ Very high IOPS
+          ✔ High disk throughput
+          ✔ Often uses NVMe SSDs
+          ✔ Low-latency local storage
+          ✔ Suitable for large data volumes
+
+            -- Common Use Cases --
+          ✔ Big data processing (Hadoop, Spark)
+          ✔ Data warehousing
+          ✔ NoSQL databases (Cassandra, MongoDB)
+          ✔ Log processing & analytics
+          ✔ Search engines (Elasticsearch, OpenSearch)
+          ✔ Streaming & ETL pipelines
+          ✔ Media processing
+        -------------------------------------------
+        |                                         |
+        |  I-series → i3, i4i (NVMe SSD)          | 
+        |  D-series → d3, d3en (high HDD capacity)|
+        |                                         |
+        -------------------------------------------
