@@ -119,3 +119,31 @@
 
         Additional Important Point =>
         When inbound traffic is allowed on a specific port (e.g., port 80 for HTTP), the response (outbound) traffic is automatically allowed, even without an explicit outbound rule.
+
+         ****************Some Important Ports and Their Uses******************************
+
+                                   ✔️ HTTP (Port 80)
+                                   => Used for unencrypted web traffic
+                                   ✔️ HTTPS (Port 443)
+                                    Used for encrypted web traffic using SSL/TLS
+                                   ✔️ SSH (Port 22)
+                                    Secure remote access to Linux/Unix servers
+                                   ✔️ FTP (Port 21)
+                                    File Transfer Protocol
+                                    Unsecured file transfer
+                                   ✔️ SFTP (Port 22)
+                                    Secure File Transfer Protocol
+                                    Uses SSH for encryption
+                                   ✔️ SMTP (Port 25)
+                                    Simple Mail Transfer Protocol
+                                    Used for sending emails
+                                   ✔️ RDP (Port 3389)
+                                    Remote Desktop Protocol
+                                    Used for Windows remote access
+                                   ✔️ MySQL (Port 3306)
+                                    Used for MySQL database connections
+                                   ✔️ PostgreSQL (Port 5432)
+                                    Used for PostgreSQL database connections
+                                   ✔️ DNS (Port 53)
+                                    Domain Name System
+                                    Converts domain names to IP addresses
