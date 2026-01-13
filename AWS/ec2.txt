@@ -97,3 +97,25 @@
         =>IAM Role: Attach IAM Role Permissions to access other AWS resources.
         =>User Data : Add Script to be exicuted when intance start.
         Elastic IP: Optionally associate a ststic IP addess for consistentpublic access 
+
+       :!:!:!:!:!:!:! Important Points About Security Groups !:!:!:!:!:!:!:!:
+
+        Security Groups are region-specific.
+        They support only “Allow” rules (no explicit deny rules).
+        By default:==>
+        All inbound traffic is blocked
+        All outbound traffic is allowed
+
+        You define rules based on:==>
+
+        Protocols (e.g., HTTP, HTTPS, SSH, etc.)
+        Port numbers
+        HTTP → Port 80
+        HTTPS → Port 443
+        SSH → Port 22
+
+        IP addresses or ranges =>
+        Example: allow traffic only from a specific IP or CIDR range
+
+        Additional Important Point =>
+        When inbound traffic is allowed on a specific port (e.g., port 80 for HTTP), the response (outbound) traffic is automatically allowed, even without an explicit outbound rule.
