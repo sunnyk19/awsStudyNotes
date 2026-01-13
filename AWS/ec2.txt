@@ -83,3 +83,17 @@
         |  D-series → d3, d3en (high HDD capacity)|
         |                                         |
         -------------------------------------------
+
+        :::::::::::::::EC2 Instance ::::::::::::
+
+        It is service that provides resizable virtual server call as instance which used to run application
+
+        => Instance Type : Select thr Hardware capacity(e.g.CPU memory);
+        => AMI (Amezon Machine Image):choose the operating system and software (linux,mac,windows).
+        => Storage: Configure the type and size of storage
+        => Security Groups: Set up firewall rules to control inbound/outbound traffic.
+        => Key Pair: Create or use an existing key pair for SSH access.
+        =>Network Settings: Configure VPC ,subnet,and assing public or private IP Addresses.
+        =>IAM Role: Attach IAM Role Permissions to access other AWS resources.
+        =>User Data : Add Script to be exicuted when intance start.
+        Elastic IP: Optionally associate a ststic IP addess for consistentpublic access 
